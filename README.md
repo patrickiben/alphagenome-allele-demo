@@ -4,7 +4,7 @@
 
 A single self-contained HTML page for the manuscript
 
-> Iben P. *What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes.* Submitted, 2026.
+> Iben P. *What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes.* Submitted, 2026. Preprint: https://doi.org/10.5281/zenodo.23543154.
 
 Reproducibility package (code, cached predictions, results): https://doi.org/10.5281/zenodo.23537469. Pre-specified plan for the seven-gene replication: https://doi.org/10.5281/zenodo.23524782.
 
