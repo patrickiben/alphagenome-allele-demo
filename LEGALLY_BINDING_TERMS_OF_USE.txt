@@ -1,0 +1,5 @@
+By using this information, you agree to AlphaGenome Output Terms of Use found at http://deepmind.google.com/science/alphagenome/output-terms
+
+This repository contains Output Derivatives of AlphaGenome Atlas outputs: the per-site distances embedded in index.html. A copy of the AlphaGenome Output Terms of Use (effective October 9, 2026) is included as AlphaGenome-Output-Terms-of-Use.pdf.
+
+Modifications made to the Output: for each of 22 AlphaGenome Atlas scorers, per-variant predicted track profiles were pooled across tracks (dominant pooling), compared with the centroid of 400 background variants, and reduced to cosine, Euclidean and Poincare distances, with per-site max-norm scaling for the Euclidean and Poincare geometries. Only these derived distances are included; no raw Atlas predictions are redistributed.

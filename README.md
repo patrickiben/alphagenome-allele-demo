@@ -12,6 +12,6 @@ At each of 120 ClinVar-selected coding sites in DNM1, PCCA, PCCB and MMUT, it as
 - **Where the signal is.** In the paper, the within-site enrichment is concentrated at nonsense and start-loss sites. At the missense sites no comparison survives correction; the "Missense alleles only" preset reruns that slice.
 - **Not clinical evidence.** This is not a pathogenicity predictor.
 
-The embedded per-site distances are derived from AlphaGenome Atlas outputs. They are shared for non-commercial research and remain subject to the [AlphaGenome terms of use](https://deepmind.google.com/science/alphagenome/terms): they may not be used commercially or to train models that predict variant effects. The page reduces the outputs to per-site distances and does not redistribute raw predictions.
+**Terms of use.** The per-site distances embedded in the page are Output Derivatives of AlphaGenome Atlas outputs. By using this information, you agree to the [AlphaGenome Output Terms of Use](http://deepmind.google.com/science/alphagenome/output-terms). A copy of the terms is included (`AlphaGenome-Output-Terms-of-Use.pdf`), and the modifications made to the outputs are listed in [`LEGALLY_BINDING_TERMS_OF_USE.txt`](LEGALLY_BINDING_TERMS_OF_USE.txt). The use restrictions include no commercial use and no training of machine-learning models outside the terms. No raw Atlas predictions are redistributed. The page's own code carries no additional license terms.
 
 No build step, no tracking. Open `index.html` in any modern browser (it loads the IBM Plex fonts from Google Fonts).
