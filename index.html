@@ -528,7 +528,7 @@ function renderSource() {
   if (CUR.usePaper) {
     el.append(h('span', { class: 'badge' }, h('span', { class: 'dot' }), 'Paper · analysis.json'));
     el.append(h('button', { type: 'button', class: 'linkbtn', text: 'Rerun in this browser', onclick: () => { S.forceBrowser = true; renderAll(); } }));
-    sub.textContent = 'Published statistics, p and q. The shuffle-null histograms are drawn in your browser.';
+    sub.textContent = 'The paper\'s statistics, p and q, from results/same_site/analysis.json in the deposit. The shuffle-null histograms are drawn in your browser.';
   } else {
     el.append(h('span', { class: 'badge' + (busy ? ' busy' : '') }, h('span', { class: 'dot' }), busy ? ('Recomputing' + (progress ? ' · ' + progress : '…')) : 'Recomputed in your browser'));
     if (isPaper()) el.append(h('button', { type: 'button', class: 'linkbtn', text: 'Show paper values', onclick: () => { S.forceBrowser = false; renderAll(); } }));
@@ -800,7 +800,7 @@ function renderContext() {
   const M = DATA.meta;
   [
     ['What this is. ', 'An illustrative explorer for the manuscript "What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes" (Iben, 2026, submitted), built only from the repository\'s cached AlphaGenome Atlas outputs. It covers the paper\'s four-gene cohort (120 sites in DNM1, PCCA, PCCB and MMUT); the replications are not embedded. Nothing is fetched from AlphaGenome, ClinVar or gnomAD while you use it.'],
-    ['Exactly the paper\'s inputs. ', 'Per-site distances were regenerated from the cache with the same code path as scripts/analyze_same_site.py, and all ' + M.cellsVerifiedAgainstAnalysisJson + ' comparisons were checked to reproduce the published statistic and farthest-share before embedding.'],
+    ['Exactly the paper\'s inputs. ', 'Per-site distances were regenerated from the cache with the same code path as scripts/analyze_same_site.py, and all ' + M.cellsVerifiedAgainstAnalysisJson + ' comparisons were checked to reproduce the paper\'s statistic and farthest-share before embedding.'],
     ['What reruns here. ', 'The shuffle null (which substitution counts as the ClinVar one), its p-value with the plus-one correction, and Benjamini–Hochberg q across the chosen family. The browser uses its own seeded random stream, so p-values match the paper only up to Monte Carlo error. Observed statistics match to the six significant figures the embedded distances are stored with.'],
     ['How distances are built. ', 'Each substitution\'s profile is compared with the centroid of 400 background SNVs. As in the pipeline, each site\'s four profiles (three substitutions plus centroid) are scaled by their largest norm before Euclidean and Poincaré distances are taken; cosine is scale-free.'],
     ['Consequence labels. ', 'Parsed from the ClinVar title of the selected allele only (for example p.Gln33Ter → nonsense). All 120 selected alleles are coding: ' + CSQS.map(c => SITES.filter(x => x.csq === c).length + ' ' + c.toLowerCase()).join(', ') + '. The other two substitutions are not annotated here.'],
