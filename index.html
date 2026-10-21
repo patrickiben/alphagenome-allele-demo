@@ -233,7 +233,7 @@ footer { padding-block: 20px 36px; font-size: 0.8rem; color: var(--muted); }
 <main class="wrap bench">
   <section class="card" id="grid-card" aria-labelledby="grid-h">
     <div class="card-head"><h2 id="grid-h">Scorer × geometry</h2>
-      <p class="chart-sub">Each tile is one comparison. Colour shows how far the observed statistic sits from its own shuffle null, in null standard deviations. Select a tile to inspect it.</p></div>
+      <p class="chart-sub">Each tile is one comparison. Color shows how far the observed statistic sits from its own shuffle null, in null standard deviations. Select a tile to inspect it.</p></div>
     <div class="legend" id="grid-legend"></div>
     <div class="grid-scroll"><table class="sgrid" id="sgrid"></table></div>
   </section>
@@ -244,7 +244,7 @@ footer { padding-block: 20px 36px; font-size: 0.8rem; color: var(--muted); }
 
 <section class="wrap"><div class="card" id="frac-card">
   <div class="dhead"><div class="card-head"><h2>How often is the ClinVar allele the farthest?</h2>
-    <p class="chart-sub">Share of sites where the ClinVar substitution is the most distant of the three, with a 95% Wilson interval. Random labelling gives 1/3.</p></div>
+    <p class="chart-sub">Share of sites where the ClinVar substitution is the most distant of the three, with a 95% Wilson interval. Random labeling gives 1/3.</p></div>
     <div class="seg" id="frac-geom"><button type="button" id="fg-cosine" data-v="cosine">Cosine</button><button type="button" id="fg-euclidean" data-v="euclidean">Euclidean</button><button type="button" id="fg-poincare" data-v="poincare">Poincaré</button></div></div>
   <div class="grid-scroll"><svg id="frac-svg" role="img" aria-label="Fraction of sites where the ClinVar allele is farthest, by scorer"></svg></div>
 </div></section>
@@ -468,7 +468,7 @@ function current() {
   return { R, usePaper };
 }
 
-// ---------- colour scale ----------
+// ---------- color scale ----------
 function step(z) { if (z == null || !isFinite(z)) return null; const a = Math.abs(z); const b = a < 1 ? 0 : a < 2 ? 1 : a < 3 ? 2 : a < 5 ? 3 : 4; return b === 0 ? '0' : (z > 0 ? 'p' : 'n') + b; }
 
 // ---------- filters ----------
@@ -589,10 +589,10 @@ function readout(r, sc, g) {
   if (r.stat == null) return '';
   const farther = r.stat > 0;
   const sigTxt = r.q != null && r.q < 0.05 ? 'This passes the multiple-testing threshold (q ' + fq(r.q) + ').' : 'It does not pass the multiple-testing threshold (q ' + fq(r.q) + ').';
-  if (Math.abs(r.z) < 2) return 'The ClinVar allele does not stand out here: the statistic sits within two null standard deviations of what random labelling gives. ' + sigTxt;
+  if (Math.abs(r.z) < 2) return 'The ClinVar allele does not stand out here: the statistic sits within two null standard deviations of what random labeling gives. ' + sigTxt;
   if (r.z > 0 && farther) return 'On average the ClinVar allele is farther from the background profile than even the farther of the other two substitutions (statistic ' + sgn(r.stat, 3) + '). It is the farthest at ' + r.k + ' of ' + r.n + ' sites, against about ' + Math.round(r.n / 3) + ' expected by chance. ' + sigTxt;
-  if (r.z > 0) return 'The statistic is negative, so the ClinVar allele is usually not the farthest of the three. It is still farther than random labelling would give (null mean ' + sgn(r.nullMean, 3) + '), and it is the farthest at ' + r.k + ' of ' + r.n + ' sites, against about ' + Math.round(r.n / 3) + ' by chance. Read this as enrichment over chance, not as the ClinVar allele beating both alternatives. ' + sigTxt;
-  return 'The ClinVar allele sits closer to the background profile than random labelling would give. ' + sigTxt;
+  if (r.z > 0) return 'The statistic is negative, so the ClinVar allele is usually not the farthest of the three. It is still farther than random labeling would give (null mean ' + sgn(r.nullMean, 3) + '), and it is the farthest at ' + r.k + ' of ' + r.n + ' sites, against about ' + Math.round(r.n / 3) + ' by chance. Read this as enrichment over chance, not as the ClinVar allele beating both alternatives. ' + sigTxt;
+  return 'The ClinVar allele sits closer to the background profile than random labeling would give. ' + sigTxt;
 }
 function renderDetail() {
   const card = clear($('detail-card')); const { s: name, g } = S.cell; const sc = BY[name]; const r = CUR.R[name + '|' + g];
@@ -805,7 +805,7 @@ function renderContext() {
     ['How distances are built. ', 'Each substitution\'s profile is compared with the centroid of 400 background SNVs. As in the pipeline, each site\'s four profiles (three substitutions plus centroid) are scaled by their largest norm before Euclidean and Poincaré distances are taken; cosine is scale-free.'],
     ['Consequence labels. ', 'Parsed from the ClinVar title of the selected allele only (for example p.Gln33Ter → nonsense). All 120 selected alleles are coding: ' + CSQS.map(c => SITES.filter(x => x.csq === c).length + ' ' + c.toLowerCase()).join(', ') + '. The other two substitutions are not annotated here.'],
     ['Where the signal comes from. ', 'In the paper, the enrichment is concentrated at the 34 nonsense and start-loss sites; at the 86 missense sites no comparison survives correction. The “Missense alleles only” preset reruns that slice.'],
-    ['Transition weighting. ', 'The weighted null gives each transition the weight shown and each transversion weight 1. Every site has one transition and two transversions, so the implied Ti:Tv ratio is half the weight: the original pipeline’s weight-2 setting, once labelled Ti:Tv 2, corresponds to Ti:Tv 1. Set the weight to 4 for Ti:Tv 2.'],
+    ['Transition weighting. ', 'The weighted null gives each transition the weight shown and each transversion weight 1. Every site has one transition and two transversions, so the implied Ti:Tv ratio is half the weight: the original pipeline’s weight-2 setting, once labeled Ti:Tv 2, corresponds to Ti:Tv 1. Set the weight to 4 for Ti:Tv 2.'],
     ['Terms of use. ', 'The embedded distances are Output Derivatives of AlphaGenome Atlas outputs. By using this information, you agree to the AlphaGenome Output Terms of Use (deepmind.google.com/science/alphagenome/output-terms): no commercial use and no training of machine-learning models outside those terms. Modifications: track profiles were pooled, compared with a 400-variant background centroid and reduced to distances; no raw predictions are included.'],
     ['What it is not. ', 'Not a pathogenicity predictor and not clinical evidence. The two alternative substitutions are other possible changes, not established benign alleles, and the four genes are four loci.'],
   ].forEach(([b, t]) => ab.append(h('p', null, h('b', { text: b }), t)));
