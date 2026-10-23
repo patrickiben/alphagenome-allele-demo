@@ -15,6 +15,23 @@ The page covers the paper's four-gene cohort. At each of 120 ClinVar-selected co
 - **What the replications found (not embedded in the page).** The paper adds two pre-specified replications: 384 held-out positions of the four genes' full ClinVar P/LP pool, and 1,713 positions in seven further genes. In the seven genes, consequence class explained much of the preference but not all of it: 10 of 66 comparisons stayed significant under a consequence-matched null. AVI singled out the ClinVar allele at 246 missense positions under a mutation-rate-aware null (38% against 33%), and 13 of 21 scorers did so at 63 other intronic positions.
 - **Not clinical evidence.** This is not a pathogenicity predictor.
 
-**Terms of use.** The per-site distances embedded in the page are Output Derivatives of AlphaGenome Atlas outputs. By using this information, you agree to the [AlphaGenome Output Terms of Use](http://deepmind.google.com/science/alphagenome/output-terms). A copy of the terms is included (`AlphaGenome-Output-Terms-of-Use.pdf`), and the modifications made to the outputs are listed in [`LEGALLY_BINDING_TERMS_OF_USE.txt`](LEGALLY_BINDING_TERMS_OF_USE.txt). The use restrictions include no commercial use and no training of machine-learning models outside the terms. No raw Atlas predictions are redistributed. The page's own code carries no additional license terms.
+**Terms of use.** The per-site distances embedded in the page are Output Derivatives of AlphaGenome Atlas outputs. By using this information, you agree to the [AlphaGenome Output Terms of Use](http://deepmind.google.com/science/alphagenome/output-terms). A copy of the terms is included (`AlphaGenome-Output-Terms-of-Use.pdf`), and the modifications made to the outputs are listed in [`LEGALLY_BINDING_TERMS_OF_USE.txt`](LEGALLY_BINDING_TERMS_OF_USE.txt). The use restrictions include no commercial use and no training of machine-learning models outside the terms. No raw Atlas predictions are redistributed. The page's original code is licensed under MIT; this does not alter the separate output restrictions above.
 
 No build step, no tracking. Open `index.html` in any modern browser (it loads the IBM Plex fonts from Google Fonts).
+
+## Code license and third-party material
+
+Original project code is licensed under [MIT](LICENSE), copyright 2026 Patrick Iben.
+Third-party code, fonts, data, model assets and outputs retain their respective licenses and terms;
+they are not relicensed by this file.
+The embedded AlphaGenome-derived distances remain subject to the
+[AlphaGenome Output Terms of Use](https://deepmind.google.com/science/alphagenome/output-terms)
+and [`LEGALLY_BINDING_TERMS_OF_USE.txt`](LEGALLY_BINDING_TERMS_OF_USE.txt), including their
+commercial-use and model-training restrictions. MIT applies to the original code, not those outputs.
+
+## Browser smoke checks
+
+Run `npm ci`, `npx playwright install --only-shell chromium`, then `npm test`.
+The browser check runs from a local HTTP origin with external requests blocked. It exercises
+interactive recomputation and checks packaged input/result integrity. It is a smoke check,
+not independent validation of the deposited scientific analysis. GitHub Actions runs it on changes.
