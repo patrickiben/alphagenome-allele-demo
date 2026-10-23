@@ -23,6 +23,10 @@ The page covers the paper's four-gene cohort. At each of 120 ClinVar-selected co
 
 No build step, no tracking. Open `index.html` in any modern browser (it loads the IBM Plex fonts from Google Fonts).
 
+## Educational companion
+
+[Plain-language reading guide](education/README.md), with worked explanations, a glossary, self-checks and answers, and exact manuscript provenance.
+
 ## Code license and third-party material
 
 Original project code is licensed under [MIT](LICENSE), copyright 2026 Patrick Iben.
