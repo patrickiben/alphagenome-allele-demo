@@ -25,7 +25,7 @@ These boundaries apply throughout:
 - The initial missense reading is inconclusive; the further-gene planned result is positive but small and heterogeneous.
 - The planned “mainly consequence class” criterion fails. Favorable post hoc explanations do not overwrite it.
 - The demo contains the initial four-gene cohort, not all replication data, and its exploratory reruns are not independent confirmation.
-- No patient recommendation, full G14 pass, human learner-transfer validation or accessibility signoff is claimed.
+- These explanations do not support patient recommendations or establish clinical validity.
 
 ## P01. Read the title as a question about a comparison
 
@@ -185,7 +185,7 @@ This is a deliberately revealing negative control. It challenges an interpretati
 
 **Source details, definitions and reported values:** For each scorer, the study forms a background centroid: the mean profile of background SNVs with usable output. It measures each of the three substitutions' distances from that centroid. The symbol T stands for one such distance.
 
-At a site, the contrast is Tfor the selected substitution minus the larger Tof the other two. The analysis averages that contrast over eligible sites. Eligibility can differ by scorer because not every output is available. The comparison requires complete profiles for the alternatives needed by that scorer.
+At a site, the contrast is T for the selected substitution minus the larger T of the other two. The analysis averages that contrast over eligible sites. Eligibility can differ by scorer because not every output is available. The comparison requires complete profiles for the alternatives needed by that scorer.
 
 This construction asks whether the selected change stands out more than its strongest rival. It reduces a multi-track prediction to a single unsigned distance. It therefore loses information about which track changes, whether the change is an increase or decrease and whether a tissue is relevant to a particular disease.
 
@@ -237,7 +237,7 @@ AVI_SCORE in Euclidean geometry has statistic+0.091 and null mean−0.104. The e
 
 POLYADENYLATION has 106 eligible positions rather than 120. Fourteen incomplete profiles are concentrated in PCCA. Comparing table rows without their denominators would hide that unequal support.
 
-**Reasoning or worked illustration:** Read a row aloud in order: “For this scorer and geometry, at this many sites, the mean contrast is this far above its own null; its adjusted evidence isq, while its first-place fraction isf.” This sentence keeps statistical strength, effect size and ranking separate. A large z can reflect a small null variability; it is not itself a clinical effect size.
+**Reasoning or worked illustration:** Read a row aloud in order: “For this scorer and geometry, at this many sites, the mean contrast is this far above its own null; its adjusted evidence is q, while its first-place fraction is f.” This sentence keeps statistical strength, effect size and ranking separate. A large z can reflect a small null variability; it is not itself a clinical effect size.
 
 **Do not accidentally conclude:** Table 1 is a selected significant subset. Non-significant comparisons are in S1. A result absent from this table is not automatically missing data, and a listed result is not automatically robust to every analysis choice.
 
@@ -521,7 +521,7 @@ The held-out result strongly repeats the nonsense-versus-missense contrast: AVI_
 
 **In ordinary language:** A planned threshold should be applied as written. A value just above it is not a passed confirmation, even if it is close. Later weighting can reveal useful patterns, but it does not replace the named planned test. The paper keeps the first replication's missense reading inconclusive and labels the favorable follow-ups separately.
 
-**Source details, definitions and reported values:** The held-out missense-matched AVI_SCORE result has q = 0.0506, displayed as 0.051 in a rounded table. The planned rule requires q < 0.05. It does not pass. AVI_SCORE_FEATURE_IMPORTANCE hasq=0.046, but that is not a substitute for a criterion naming AVI_SCORE.
+**Source details, definitions and reported values:** The held-out missense-matched AVI_SCORE result has q = 0.0506, displayed as 0.051 in a rounded table. The planned rule requires q < 0.05. It does not pass. AVI_SCORE_FEATURE_IMPORTANCE has q = 0.046, but that is not a substitute for a criterion naming AVI_SCORE.
 
 The initial 86-site context-aware result points the other way under its planned weighted null. The first replication plan keeps the missense question inconclusive when these readings disagree. Later weighting of the held-out null gives q = 0.002; it is explicitly outside that plan. Adding the original cohort back to the pool also produces favorable results, but reuses the original observations.
 
@@ -643,7 +643,7 @@ Twenty-one of the 29 significant other-intronic comparisons involve scorers with
 
 **Source details, definitions and reported values:** For this analysis the three substitution profiles at a site are averaged. Sites are then clustered, and cluster labels are compared with four gene names using adjusted Rand index, or ARI. ARI corrects pair agreement for a chance reference; values near zero indicate little agreement under that comparison.
 
-AVI_SCORE_MODEL_FEATURES shows no gene structure at the tested settings. Its 75 eligible sites have all three substitutions missense so that AlphaMissense is defined for each. RNA_SEQ at five clusters gives ARI 0.037 andq 0.03 within its scorer family, but q 0.063 when both scorers form one family. The apparent pattern is four singleton outliers separated from one 116-site cluster, not recovery of four gene groups.
+AVI_SCORE_MODEL_FEATURES shows no gene structure at the tested settings. Its 75 eligible sites have all three substitutions missense so that AlphaMissense is defined for each. RNA_SEQ at five clusters gives ARI 0.037 and q 0.03 within its scorer family, but q 0.063 when both scorers form one family. The apparent pattern is four singleton outliers separated from one 116-site cluster, not recovery of four gene groups.
 
 The analysis changes the unit representation from allele-specific profiles to site averages. It therefore cannot directly adjudicate the primary allele-selection question. Both can be weak or strong for different reasons.
 
@@ -1293,17 +1293,17 @@ The browser demo reruns the conditional test on subsets using cached outputs. It
 
 **Evidence class:** AUTHOR DECLARATION
 
-**In ordinary language:** The paper discloses AI help and assigns responsibility to the author. It also explains how figures were made. These statements help readers assess provenance. They are not statistical findings or independent human review. The same distinction applies to this guide, which must not invent a learner study or a signoff that never occurred.
+**In ordinary language:** The paper discloses AI help and assigns responsibility to the author. It also explains how figures were made. These statements help readers assess provenance. They are not statistical findings or independent human review. A disclosure identifies assistance and responsibility; it is not evidence of scientific validity.
 
 **Source details, definitions and reported values:** The manuscript declares generative AI assistance for coding, drafting, editing, reference checks and simulated pre-submission review. It names tools and the period of use. It reports separate AI-assisted verification of generated findings, followed by author review and responsibility.
 
 Figures were rendered programmatically from deposited data; no image-generation tool was used. AI tools are not listed as authors. The v3 authorship wording records that the author directed and verified AI-assisted implementation and takes responsibility for the content.
 
-This disclosure helps a reader assess provenance. It is not a certificate that every generated statement is correct. Nor does a review by a second model become an independent human peer review. The distinction also applies to this educational companion.
+This disclosure helps a reader assess provenance. It is not a certificate that every generated statement is correct. Nor does a review by a second model become an independent human peer review.
 
 **Reasoning or worked illustration:** Responsibility, reproducibility and independent validation are different roles. A named author can be responsible for assisted work; exact code can support reproducibility; additional evidence is still needed for biological or educational validity. Transparent disclosure allows those questions to be asked rather than merging them into one endorsement.
 
-**Do not accidentally conclude:** This companion does not add a fabricated human signoff, learner study or full G14 clearance. The source’s AI declaration should be understood as a disclosure, not a statistical result.
+**Do not accidentally conclude:** The source’s AI declaration is a disclosure, not a statistical result or independent scientific validation.
 
 **Self-check:** Why should “AI-assisted simulated review” not be shortened to “peer reviewed”?
 
@@ -2020,7 +2020,7 @@ The fixed 452-position comparison gives uniform excess 0.146 and matched excess 
 
 ## Twelve-item transfer self-test with answers
 
-These questions ask you to transfer the reasoning to a new benchmark. They have not been administered to learners, and the answer notes are not evidence of educational effectiveness. No score threshold is claimed to establish competence.
+These questions ask you to transfer the reasoning to a new benchmark. Try each question before reading its answer.
 
 ### 1. State the estimand before the model name
 
@@ -2098,4 +2098,4 @@ These questions ask you to transfer the reasoning to a new benchmark. They have 
 
 The complete companion is pinned to the exact v3 PDF and five additional files identified in the reader entry. It explains the source rather than extending its scientific claims. The frozen code/data and public panel plan retain their versioned deposit identifiers. Underlying AlphaGenome-derived outputs keep their separate terms.
 
-This text has source, coverage, arithmetic and mechanical readability checks. Those checks do not constitute full manuscript revalidation, a full G14 pass, human audience-reader approval, successful learner transfer or accessibility certification. The questions and answers remain self-study materials. Future source revisions require a new fidelity comparison rather than a silent title or DOI substitution.
+The questions and answers support self-study. All source locators refer to the exact v3 files identified above, rather than to later manuscript versions.

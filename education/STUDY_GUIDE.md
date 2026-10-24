@@ -261,7 +261,7 @@ The guide and explorer do not provide a treatment recommendation or a clinical v
 
 ## Self-check answers
 
-These are answer notes, not a record of learner testing. Try each prompt before reading its answer.
+Try each prompt before reading its answer notes.
 
 1. **Comparison units.** Each reference base has three non-reference alternatives. The initial positions belong to four gene regions. Intronic variation is absent from the initial coding sample. Three substitutions do not create three independent loci.
 2. **Coordinate shortcut.** A gene-region rule can exploit how selected and background samples were drawn. It cannot choose among alternatives sharing a position. That requires information that varies among those alternatives.
@@ -286,6 +286,6 @@ A good answer does not promise a perfect benchmark. It explains which weaknesses
 
 ## Source and use boundary
 
-This companion was prepared against the exact v3 source on 23 October 2026. It does not silently update with later preprint versions. The paper, its five supplemental PDFs, frozen code/data deposit and pre-specified panel plan remain the scientific sources. [The provenance entry](README.md) gives exact identifiers and hashes.
+The exact source is preprint v3. The paper, its five supplemental PDFs, frozen code/data deposit and pre-specified panel plan are the scientific sources. [The provenance entry](README.md) gives exact identifiers and hashes. These source locators do not track later preprint versions.
 
-The guide has been checked against those stated sources for its selected claims and arithmetic. It has not received independent human learner-transfer, accessibility or full manuscript-validation clearance. Nothing here adds clinical validation, a new analysis result or a new license for underlying model outputs.
+Nothing here adds clinical validation, a new analysis result or a new license for underlying model outputs.

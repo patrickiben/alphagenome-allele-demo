@@ -1,38 +1,32 @@
 {
   "schema_version": 2,
-  "prepared_on": "2026-10-23",
   "editions": {
     "study_guide": "Concise orientation, key results, boundaries and answered self-checks.",
     "companion": "Complete source-guided walkthrough; the coverage map specifies all included source material and structural exclusions."
   },
   "study_guide_markdown": {
     "file": "STUDY_GUIDE.md",
-    "sha256": "942f9bf901f4de6df2d4876d39bd1101208d686fcc8ff4828dcc0fd29e1ae30a",
-    "words": 4543
+    "sha256": "8837fd3b4e9a2f380ba1fa33f7cd7443e2a1d706b04418a3c979bfde6a7eda5e",
+    "words": 4500
   },
   "study_guide_pdf": {
     "file": "STUDY_GUIDE.pdf",
-    "sha256": "a85b6da1989f5198e84cbdbb6cab766463c4632c02ed13964bbe1975c878718b",
+    "sha256": "c8524b731e910e54e7944cc5698e8f87e9f3df18e2b97b0569a9eebf37e8030d",
     "pages": 11
   },
   "companion_markdown": {
     "file": "COMPANION.md",
-    "sha256": "c5e002e9c144ea0122d73fbe305460bce82f6b225a9bc6fe977a684a2b8b3168",
-    "words": 32023
+    "sha256": "5e263d3c14f19fc8c38160598d1270ca7dad64213525b975999e2cde46993a57",
+    "words": 31948
   },
   "companion_pdf": {
     "file": "COMPANION.pdf",
-    "sha256": "f72cbe0cbe91054ab159a62c79497dacbfb2c40aa16f286f83b1dd9019409290",
+    "sha256": "bbbdf24c6fca216184ae0f7ec811beab639699bee90d3eb9369263bd91d5a0e2",
     "pages": 72
   },
   "complete_coverage": {
     "file": "COMPLETE_COVERAGE.md",
-    "sha256": "c7aec6b0edcdf68d8a142e171d9f39e6764ca50123083dad23a2a1b22a093dfe"
+    "sha256": "8993f043c36769026bbb638de43936d95adc6e018124fbc5da91b8f5eda0c786"
   },
-  "basis": "Exact manuscript version specified in README.md. Future manuscript versions require a new fidelity check.",
-  "pdf_preparation": {
-    "study_guide": "Rendered from Markdown; previously published guide preserved unchanged",
-    "companion": "Expanded complete companion rendered from Markdown, with source SHA-256 in PDF metadata."
-  },
-  "review_scope": "AI-assisted source fidelity, coverage, numerical and document checks. No independent empirical replication, full G14 certification, human learner or accessibility signoff claimed."
+  "basis": "Exact manuscript version and source SHA-256 specified in README.md."
 }

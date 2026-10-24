@@ -6,13 +6,13 @@ Choose the depth you need:
 - **Complete companion:** [Markdown](COMPANION.md) or [PDF](COMPANION.pdf). Eighty-one developed units walk through the exact main paper and all five supplements. Each includes a plain-language first pass, exact source details, reasoning, a boundary and an answered check. A glossary and twelve-item answered transfer test follow.
 - **Coverage:** [Source-to-unit map](COMPLETE_COVERAGE.md) lists every substantive section, method, figure, table, formula and limitation, with reference and administrative coverage distinguished explicitly.
 
-Both are for readers with basic statistics and no assumed genetics expertise. Neither is a clinical interpretation tool. The concise guide was preserved unchanged from the first educational release; the complete companion adds the requested passage-by-passage depth. References in the concise guide to Discussion subparts such as §3.1 or §3.3 mean the corresponding unnumbered synthesis or Limitations within Section 3; the complete companion uses the source's exact heading structure.
+Both are for readers with basic statistics and no assumed genetics expertise. Neither is a clinical interpretation tool. References in the concise guide to Discussion subparts such as §3.1 or §3.3 mean the corresponding unnumbered synthesis or Limitations within Section 3; the complete companion uses the source's exact heading structure.
 
 The explorer covers only the initial 120 coding sites in four genes. Both documents also explain the two replications; those additional cohorts are not embedded in the explorer. See the [repository entry](../README.md) for the live demo and output terms.
 
 ## Exact source basis
 
-Patrick Iben, *What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes*, **preprint v3**, DOI **10.5281/zenodo.23546548**. The current record and latest-version endpoint were checked on **23 October 2026**.
+Patrick Iben, *What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes*, **preprint v3**, DOI **10.5281/zenodo.23546548**.
 
 - [Exact source PDF](https://zenodo.org/api/records/23546548/files/Iben_2026_AlphaGenome_within-site_audit_preprint_SUBMITTED-VERSION.pdf/content): `Iben_2026_AlphaGenome_within-site_audit_preprint_SUBMITTED-VERSION.pdf`, **40 pages**.
 - Source PDF SHA-256: `9087089b334e7c5b1b6c4358150e3a181e80bb1aaf085ef8bc882f995563e8dd`.
@@ -20,13 +20,13 @@ Patrick Iben, *What do within-site comparisons of AlphaGenome Atlas predictions 
 
 The page references in the companion count the PDF title page as page 1. They point to the source version above, rather than to a changing web page. This guide does not silently update with later preprints.
 
-The source's v3 notice corrects the PDF uploaded as v2. This companion was checked against the actual v3 PDF, not an older local manuscript or the mistaken v2 upload.
+The source's v3 notice identifies the PDF uploaded as v2 as a mistaken upload. The exact v3 file linked above is the scientific basis for both reading routes.
 
-## Supplement checks
+## Supplemental sources
 
-The full 40-page main paper was read. The five supplemental PDFs were retrieved from the same v3 record. Checks concentrated on tables needed for the guide: primary results and geometry definitions; consequence matching; per-gene counts; high-precision nulls; alternative labels and training exposure; and both replications. This is not a claim that every supplemental table cell was independently reanalyzed.
+The five supplemental PDFs on the v3 record cover coordinate-only baselines, geometry definitions, consequence matching, per-gene counts, exact nulls, alternative labels, training exposure and both replications.
 
-| Exact source file | Role in the check | SHA-256 |
+| Exact source file | Contents | SHA-256 |
 |---|---|---|
 | Additional_file_1.pdf | Coordinate-only baseline and gene-label recovery figures | `0b552344fbc770627ecb0d0bfbd722ac3476143c480b84376600de2bd7986858` |
 | Additional_file_2.pdf | Sensitivities, geometry and scorer/background definitions | `0bbbcabb8085a220e59afa989ec75509bcae5d7912500ae997b934511ad2fd9f` |
@@ -34,15 +34,13 @@ The full 40-page main paper was read. The five supplemental PDFs were retrieved 
 | Additional_file_4.pdf | Per-gene and leave-one-gene-out checks | `22663f0631f2f048de39ae501901fefb684a490cb3883075c45ae40d90762923` |
 | Additional_file_5.pdf | Exact nulls, labels, training exposure and replication tables | `d5590a61b7e73e3dd3cd4b158a294ff112de206690dce43db94f53f96dfa77bc` |
 
-These files are available on the exact source record. Their names and hashes identify the checked artifacts without changing the scientific deposit.
+These files are available on the exact source record. Their names and hashes identify the exact source artifacts.
 
-## Educational status and terms
+## Scope and terms
 
-No suitable existing educational companion was found in the searched local AlphaGenome project material. The concise guide and the expanded complete companion were prepared on **23 October 2026**, using the educational-fidelity principles of the manuscript validation harness. They include source locators, evidence boundaries, explicit exercise answers and checks of reported arithmetic. The complete companion maps all substantive source items; it does not independently recompute every source table cell.
+The complete companion maps all substantive source items, including how to read the table families and their exceptions. The source tables provide the full numerical arrays. The teaching explanations are not independent biological experiments or clinical validation.
 
-This work is an educational fidelity check, not a new analysis or full scientific revalidation. No human learner-transfer study, audience-reader signoff or accessibility clearance is claimed. The exercises have not been administered to learners. A correct answer key is not evidence of successful teaching.
-
-The guide changes no paper, data, model output, code license or legal terms. AlphaGenome-derived outputs in the explorer remain subject to the separate [output terms](https://deepmind.google.com/science/alphagenome/output-terms) and the repository's [binding terms notice](../LEGALLY_BINDING_TERMS_OF_USE.txt). The educational explanation does not grant rights beyond those terms.
+AlphaGenome-derived outputs in the explorer remain subject to the separate [output terms](https://deepmind.google.com/science/alphagenome/output-terms) and the repository's [binding terms notice](../LEGALLY_BINDING_TERMS_OF_USE.txt). The educational explanation does not grant rights beyond those terms.
 
 ## Download integrity
 

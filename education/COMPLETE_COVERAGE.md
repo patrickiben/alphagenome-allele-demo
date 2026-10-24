@@ -1,8 +1,8 @@
 # Complete coverage map: AlphaGenome v3
 
-This map accompanies the [complete educational companion](COMPANION.md), with 81developed units. It is separate from the preserved [concise study guide](STUDY_GUIDE.md). Exact source files and SHA-256 hashes are recorded in [README.md](README.md). Main source: 40 pages; Additional files 1–5: 2, 5, 4, 2 and 8 pages. Page counts include each PDF title page.
+This map accompanies the [complete educational companion](COMPANION.md), with 81 developed units. It is separate from the [concise study guide](STUDY_GUIDE.md). Exact source files and SHA-256 hashes are recorded in [README.md](README.md). Main source: 40 pages; Additional files 1–5: 2, 5, 4, 2 and 8 pages. Page counts include each PDF title page.
 
-Coverage is substantive item coverage, not a claim that every table cell was independently recomputed. Every unit contains a plain-language first pass, exact source detail, reasoning or worked illustration, a nonclaim, and an answered self-check. Dense tables receive a method for reading every row plus relevant exceptions; the source tables retain the complete numerical arrays. References and administrative material are identified separately below. Nothing is silently treated as a new experiment or as a full G14 clearance.
+Coverage is substantive item coverage, not a claim that every table cell was independently recomputed. Every unit contains a plain-language first pass, exact source detail, reasoning or worked illustration, a nonclaim, and an answered self-check. Dense tables receive a method for reading every row plus relevant exceptions; the source tables retain the complete numerical arrays. References and administrative material are identified separately below. Numerical explanations are not new experiments.
 
 ## Source-to-unit map
 
@@ -182,4 +182,4 @@ Coverage is substantive item coverage, not a claim that every table cell was ind
 
 All Results 2.1–2.10, all 8 numbered limitations, Methods 5.1–5.10, both main tables, both main figures, both supplementary figures, and Tables S1–S21 including S16b/S20b/S20c have explicit mappings. The title/abstract, Background, Discussion, Conclusions, declarations, supplementary inventory, abbreviations and reference-list roles are also mapped. No substantive source section or supplemental table is intentionally omitted.
 
-The map does not certify scientific validity, audit every reference afresh, verify private author declarations, or claim a successful learner transfer test. Reader questions have answers but have not been administered. Mechanical source, locator, arithmetic and readability receipts are preparation checks, not a full manuscript or G14 pass. The exact v3 basis remains fixed; later versions require a new comparison.
+The map identifies source coverage, not scientific validity or the full contents of every cited paper. It refers to the exact v3 basis above.
