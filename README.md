@@ -25,7 +25,7 @@ No build step, no tracking. Open `index.html` in any modern browser (it loads th
 
 ## Educational companion
 
-[Plain-language reading guide](education/README.md), with worked explanations, a glossary, self-checks and answers, and exact manuscript provenance.
+[Concise study guide and complete companion](education/README.md), with separate PDFs, worked explanations, glossaries, answered self-checks and exact manuscript provenance. The complete companion covers the main paper and all five supplements; its [coverage map](education/COMPLETE_COVERAGE.md) makes the source-to-lesson correspondence explicit.
 
 ## Code license and third-party material
 

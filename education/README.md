@@ -1,12 +1,14 @@
 # Understanding the same-site AlphaGenome audit
 
-[Download the companion PDF](COMPANION.pdf).
+Choose the depth you need:
 
-[Read the educational companion](COMPANION.md). It is written for someone with basic statistics and no assumed genetics background. Twelve teaching units explain the question, the null comparison, consequence-class effects, both replications and the limits of clinical labels. Each unit gives source locations, a plain-language explanation, evidence status, a misreading to avoid and a self-check. Answer notes, a glossary and a transfer exercise follow.
+- **Concise study guide:** [Markdown](STUDY_GUIDE.md) or [PDF](STUDY_GUIDE.pdf). Twelve teaching units, glossary, worked explanations and answered self-checks provide a first route through the question and main results.
+- **Complete companion:** [Markdown](COMPANION.md) or [PDF](COMPANION.pdf). Eighty-one developed units walk through the exact main paper and all five supplements. Each includes a plain-language first pass, exact source details, reasoning, a boundary and an answered check. A glossary and twelve-item answered transfer test follow.
+- **Coverage:** [Source-to-unit map](COMPLETE_COVERAGE.md) lists every substantive section, method, figure, table, formula and limitation, with reference and administrative coverage distinguished explicitly.
 
-For a short route, read units **1–4** to understand the comparison, **6–8** to interpret the major results, and **10–12** for limits and responsible use of the browser explorer. The guide is not a clinical interpretation tool.
+Both are for readers with basic statistics and no assumed genetics expertise. Neither is a clinical interpretation tool. The concise guide was preserved unchanged from the first educational release; the complete companion adds the requested passage-by-passage depth. References in the concise guide to Discussion subparts such as §3.1 or §3.3 mean the corresponding unnumbered synthesis or Limitations within Section 3; the complete companion uses the source's exact heading structure.
 
-The explorer covers only the initial 120 coding sites in four genes. The guide also explains the paper's two replications; those additional cohorts are not embedded in the explorer. See the [repository entry](../README.md) for the live demo and its output terms.
+The explorer covers only the initial 120 coding sites in four genes. Both documents also explain the two replications; those additional cohorts are not embedded in the explorer. See the [repository entry](../README.md) for the live demo and output terms.
 
 ## Exact source basis
 
@@ -36,7 +38,7 @@ These files are available on the exact source record. Their names and hashes ide
 
 ## Educational status and terms
 
-No suitable existing educational companion was found in the searched local AlphaGenome project material. This guide was newly prepared on **23 October 2026**, using the educational-fidelity principles of the manuscript validation harness. It includes source locators, evidence boundaries, explicit exercise answers and checks of its reported arithmetic.
+No suitable existing educational companion was found in the searched local AlphaGenome project material. The concise guide and the expanded complete companion were prepared on **23 October 2026**, using the educational-fidelity principles of the manuscript validation harness. They include source locators, evidence boundaries, explicit exercise answers and checks of reported arithmetic. The complete companion maps all substantive source items; it does not independently recompute every source table cell.
 
 This work is an educational fidelity check, not a new analysis or full scientific revalidation. No human learner-transfer study, audience-reader signoff or accessibility clearance is claimed. The exercises have not been administered to learners. A correct answer key is not evidence of successful teaching.
 
