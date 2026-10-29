@@ -10,7 +10,7 @@ A single self-contained HTML page preserving the earlier audit:
 [Earlier audit code and data](https://doi.org/10.5281/zenodo.23537469) ·
 [Manuscript → code → demo map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md).
 
-**Project status, 28 October 2026.** The earlier manuscript received desk decisions for journal fit and is no longer under journal consideration. The current rework, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, is in preparation for **BMC Bioinformatics** and has not been submitted. Its toolkit audits contact-map anchoring and diagram rankings; this explorer retains the earlier background-profile comparison.
+**Project status, 29 October 2026.** The earlier manuscript received desk decisions for journal fit and is no longer under journal consideration. The current rework, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, was submitted to **BMC Bioinformatics** on 29 October 2026 and is in technical check. Its toolkit audits contact-map anchoring and diagram rankings; this explorer retains the earlier background-profile comparison.
 
 **Current rework:** [Latest manuscript](https://github.com/patrickiben/contact-map-anchor-audit/blob/main/research/manuscript.pdf) · [Code and data](https://github.com/patrickiben/contact-map-anchor-audit) · [Live demo](https://patrickiben.github.io/contact-map-anchor-audit/) · [Study guide](https://github.com/patrickiben/contact-map-anchor-audit/blob/main/education/STUDY_GUIDE.pdf) · [Complete companion](https://github.com/patrickiben/contact-map-anchor-audit/blob/main/education/COMPANION.pdf).
 
